@@ -1,0 +1,164 @@
+:root{
+
+/* ### Primary */
+
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+/* ### Neutral */
+
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+#header{
+    max-width: 400px;
+}
+#header p{
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 500;
+
+}
+#header h1{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    max-width: 250px;
+    margin-bottom: 0;
+    align-self: center;
+}
+#headercontainer,.profile{
+    flex-wrap: wrap;
+}
+body{
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-color: var(--White);
+
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+
+#ratecontainer{
+    min-height: 200px;
+    min-width: 40%;
+}
+.rate-item img{margin: 2px;}
+.rate-item{
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 10px;
+    /* max-width: 350px; */
+    width: 350px;
+    margin: 0 20px;
+    padding-left: 20px;
+}
+li span{
+    margin-left: 20px;
+    font-weight: 400;
+}
+span{
+    font-weight: 400;
+}
+strong{
+    font-weight: 500;
+}
+#card-container{
+    justify-content: space-around;
+    min-height: 300px;
+    color: var(--White);
+}
+.card img{
+    
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.card span{
+    color: var(--Soft-Pink);
+}
+.one{
+    margin-top: 0px;
+    
+}
+.two{
+    
+    margin-top: 5%;
+}
+.three{
+    margin-top: 10%;
+
+}
+.rate1{
+    margin-left: 0px;
+    
+}
+.rate2{
+    margin-left: 5%;
+    
+}
+.rate3{
+    margin-left: 10%;
+    
+}
+
+.card{
+    box-shadow: var(--Very-Dark-Magenta) 2px 2px 5px 2px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--Very-Dark-Magenta);
+    width: 25%;
+    min-height: 200px;
+}
+@media (min-width: 376px ) and (max-width: 445px){
+    .flex-row{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%;
+        margin-bottom: 20px;
+        min-height: 300px;
+    }
+    .one,.two,.three{
+        margin-top: 0px;
+    }
+    .rate1,.rate2,.rate3{
+        margin-left: 0;
+        width: auto;
+
+    }
+    
+}
+@media (max-width: 375px){
+    .flex-row{
+        flex-wrap: wrap;
+    }
+    #card-container{
+        flex-direction:column;
+        margin-top: 20px;
+        
+    }
+    .rate1,.rate2,.rate3{
+        margin-left: 0;
+        width:calc(100% - 30px) ;
+
+    }
+    .card{
+        width: 70%;
+        margin-bottom: 20px;
+        min-height: 400px;
+    }
+    .one,.two,.three{
+        margin-top: 0px;
+        
+    }
+}
